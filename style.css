@@ -1,0 +1,308 @@
+﻿/*css 初始化代码 css reset*/
+/*清除元素默认的内外边距*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*清除列表样式*/
+li {
+	list-style: none;
+}
+body {
+	background-color: #f3f5f7;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/*版心*/
+.w {
+	width: 1200px;
+	margin: auto;
+}
+.headr {
+	height: 42px;
+	/*background-color: pink;*/
+	margin: 30px auto;
+}
+.logo {
+	float: left;
+	margin-right: 60px;
+}
+/*导航栏一定是li和a组成的*/
+
+.nav {
+	float: left;
+}
+.nav ul li {
+	float: left;
+}
+.nav ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	margin-right: 20px;
+	font-size: 18px;
+	color: #050505;
+	text-decoration: none;
+}
+/*鼠标经过链接 才有底边框*/
+.nav ul li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+
+.search input {
+	float: left;
+	width: 360px;
+	height: 42px;
+	border: 1px solid #00a4ff;
+	border-right: 0;
+	outline: none;
+	padding-left: 20px;
+	box-sizing:border-box;
+}
+.search button {
+	float: left;
+	width: 50px;
+	height: 42px;
+	background: url(images/btn.png);
+	border:0;
+
+}
+.user {
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.banner {
+	height: 420px;
+	background: #1c036c url(images/banner2.jpg) top center no-repeat; 
+}
+.subnav {
+	float: left;
+	width: 150px;
+	height: 420px;
+	padding: 0 20px; 
+	/*背景半透明*/
+	background: rgba(0, 0, 0, .3);
+}
+.subnav li {
+	height: 45px;
+	line-height: 45px;
+}
+.subnav ul li a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.subnav ul li a:hover {
+	color: #00b4ff;
+}
+.subnav span {
+	float: right;
+}
+.course {
+	/*因为course 子盒子有了浮动，则就不会外边距塌陷的问题了*/
+	float: right;
+	width: 228px;
+	height: 300px;
+	/*background-color: pink;
+*/	margin-top: 50px;
+}
+.course-hd {
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #9bceea;
+
+}
+.course-bd {
+	/*没有宽度的盒子 padding 不会撑开盒子*/
+	padding: 15px;
+	background-color: #fff;
+}
+
+.course-bd li {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+.course-bd li h4 {
+	font-size: 14px;
+	color: 
+}
+.course-bd li p {
+	font-size: 12px;
+	color: #ccc
+}
+.course-bd ul a {
+	display: block;
+	height: 38px;
+	font-size: 18px;
+	color: #00a4ff;
+	border: 1px solid #00a4ff;
+	line-height: 38px;
+	text-align: center;
+	text-decoration: none;
+}
+.course-bd ul a:hover {
+	background-color: #00a4ff;
+	color: #fff;
+}
+/*banner end*/
+/*goods start*/
+.good {
+	height: 60px;
+	margin-top: 10px;
+	background-color: #fff;
+	line-height: 60px;
+	box-shadow: 2px 2px 2px rgba(0 , 0, 0, .2);
+
+}
+.good h3 {
+	float: left;
+	font-size: 16px;
+	color: #00a4ff;
+	margin: 0 30px;
+}
+.good-item {
+	float: left;
+}
+.good-item a {
+	color: #000;
+	margin: 0 30px;
+}
+.mod {
+	float: right;
+	font-size: 14px;
+	color: #00a4ff;
+	margin-right: 30px;
+}
+/*goods end*/
+/*box start*/
+.box{
+	margin-top: 15px;
+	
+}
+.box-hd {
+	height: 60px;
+	line-height: 60px;
+	/*background-color: pink;*/
+}
+
+.box-hd h3{
+	float: left;
+	font-size: 20px;
+	color: #494949;
+	font-weight:400; 
+}
+.box-hd a {
+	float: right;
+	font-size: 12px;
+	margin-right: 30px;
+	color: #a5a5a5;text-decoration: none;
+}
+.box-bd {
+	/*这个盒子一定不要给高度 因为我们可能放一行 也可能是2行 或者n行*/
+	/*宽度呢？ 呵呵*/
+	/*box-bd 宽度 超过了 版心 1200 是可以的，就就解决了问题*/
+	width: 1215px;
+}
+
+
+.box-bd li {
+	position: relative;
+	float: left;
+	width: 228px;
+	height: 270px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .3)
+	top: 0;
+	left: 0;
+	transition: all .3s linear;
+}
+.box-bd li:hover {
+	transform: translateY(-5px);
+}
+.box-bd .hot {
+	position: absolute;
+	right: -4px;
+	top:0px;
+	width: 40px;
+}	
+.box-bd li img {
+	width: 100%;
+}
+.box-bd li h4 {
+	font-size: 14px;
+	margin: 20px;
+	font-weight: 400;
+}
+.box-bd li p {
+	font-size: 12px;
+	margin: 0 20px;
+	color: #999;
+}
+.footer {
+	height: 385px;
+	padding-top: 30px;
+	background-color: #fff;
+}
+.cropright {
+	float: left;
+}
+.cropright p {
+	font-size: 12px;
+	color: #666;
+	margin:20px 0 15px 0;
+
+}
+.app{
+	display: block;
+	width: 118px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #00a4ff;
+	text-align: center;
+	font-size: 16px;
+	color: #00a4ff;
+}
+.link{
+	float: right;
+
+}
+.link dl {
+	float: left;
+	margin-right: 160px;
+}
+.link dt {
+	height: 35px;
+	font-size: 16px;
+	color: #333;
+}
+.link dd a{
+	font-size: 12px;
+	color: #333;
+}
+.link  dd a:hover {
+	color: #004aff;
+}
